@@ -38,8 +38,13 @@ export default function Navbar() {
     <section className="">
       <div className="flex justify-center md:justify-between items-center h-[100px]">
         {/* Logo */}
-        <div className=" text-2xl font-bold  text-center md:text-left hover:text-[#53c28b] ">
-          <Link href="/">Max&apos;s Port</Link>
+        <div className=" hover:text-[#53c28b] ">
+          <Link href="/">
+            <h1 className="text-2xl font-bold  text-center md:text-left">
+              Max&apos;s Port
+            </h1>
+            <p className="text-sm">portfolio + personal branding</p>
+          </Link>
         </div>
 
         {/* Navigation Links - hidden on mobile, flex on md+ */}
