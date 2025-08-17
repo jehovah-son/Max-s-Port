@@ -9,7 +9,7 @@ export default function Footer() {
       <div className="text-xs text-gray-400">
         © 2023 Max&apos;s Port. All rights reserved.
       </div>
-      <div className=" opacity-50 flex gap-3 justify-center items-center cursor-pointer">
+      <div className=" opacity-60 flex gap-3 justify-center items-center cursor-pointer">
         <Image
           src={FaceBook}
           width={16}
