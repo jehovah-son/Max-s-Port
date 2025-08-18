@@ -18,10 +18,8 @@ type PageProps = {
   params: { category: string };
 };
 
-export default async function CategoriesPage(props: PageProps) {
-  const { params } = await props;
-  console.log("params gotten:", params);
-  const data = getData(params.category);
+export default async function CategoriesPage({ params }: PageProps) {
+  const data = await getData(params.category);
 
   return (
     <div>
