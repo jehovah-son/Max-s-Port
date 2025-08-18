@@ -7,7 +7,6 @@ import Image from "next/image";
 
 const getData = (cat: string) => {
   const data = Frameworks[cat as keyof typeof Frameworks];
-
   if (data) {
     return data;
   } else {
@@ -22,11 +21,8 @@ type PageProps = {
 };
 
 export default function CategoriesPage({ params }: PageProps) {
-  // Fetch the data based on the category
-  console.log(params);
   const data = getData(params.category);
 
-  // If data is found, return the JSX
   return (
     <div>
       <h1>{params.category}</h1>
