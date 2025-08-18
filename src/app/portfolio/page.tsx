@@ -20,7 +20,7 @@ export default function Portfolio() {
 
   return (
     <div className="pb-10">
-      <h1 className="md:text-8xl text-6xl text-[#bbb] text-center md:text-left font-bold">
+      <h1 className="md:text-7xl text-5xl text-[#bbb] text-center md:text-left font-bold">
         Our Works
       </h1>
       <h2 className="text-3xl text-[#bbb] text-center md:text-left font-bold pb-5 pt-7">
@@ -32,15 +32,15 @@ export default function Portfolio() {
           <div className="rounded-2xl border-2 w-[250px] h-[300px] border-grey-400 relative cursor-pointer [&:nth-child(1)]:bg-[url('/next-logo.png')] bg-contain bg-center"></div>
         </Link>
         {/* React */}
-        <Link href="/portfolio/react">
-          <div className=" rounded-2xl border-2 w-[250px] h-[300px] border-grey-400 relative cursor-pointer bg-no-repeat [&:nth-child(1)]:bg-[url('/react-logo.png')] bg-cover bg-center"></div>
+        <Link href="/portfolio/typescript">
+          <div className=" rounded-2xl border-2 w-[250px] h-[300px] border-grey-400 relative cursor-pointer  [&:nth-child(1)]:bg-[url('/typescript-logo.png')] bg-contain bg-center"></div>
         </Link>
         {/* typescript */}
-        <Link href="/portfolio/typescript">
-          <div className=" rounded-2xl border-2 w-[250px] h-[300px] border-grey-400 relative cursor-pointer [&:nth-child(1)]:bg-[url('/typescript-logo.png')] bg-contain bg-center"></div>
+        <Link href="/portfolio/">
+          <div className=" rounded-2xl border-2 w-[250px] h-[300px] border-grey-400 relative cursor-pointer bg-no-repeat [&:nth-child(1)]:bg-[url('/react-logo.png')] bg-cover bg-center"></div>
         </Link>
         {/* flutter */}
-        <Link href="/portfolio/flutter">
+        <Link href="/portfolio/">
           <div className=" rounded-2xl border-2 w-[250px] h-[300px] border-grey-400 relative cursor-pointer [&:nth-child(1)]:bg-[url('/flutter-logo.png')] bg-contain  bg-center"></div>
         </Link>
       </div>

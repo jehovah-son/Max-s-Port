@@ -5,21 +5,57 @@ export const Frameworks = {
             id: 1,
             title: "Sancus africa",
             description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vel tenetur necessitatibus unde natus perspiciatis, amet cupiditate ducimus possimus, eaque ex autem id nobis eum dolorem. Neque eveniet fugiat tenetur?",
-            image: "/next-logo.png",
+            image: "/screenshot.png",
+            link: "https://nextjs.org/"
+        },
+        {
+            id: 2,
+            title: "Expense Tracker",
+            description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vel tenetur necessitatibus unde natus perspiciatis, amet cupiditate ducimus possimus, eaque ex autem id nobis eum dolorem. Neque eveniet fugiat tenetur?",
+            image: "/screenshot.png",
+            link: "https://nextjs.org/"
+        },
+        {
+            id: 3,
+            title: "Max Port",
+            description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vel tenetur necessitatibus unde natus perspiciatis, amet cupiditate ducimus possimus, eaque ex autem id nobis eum dolorem. Neque eveniet fugiat tenetur?",
+            image: "/screenshot.png",
+            link: "https://nextjs.org/"
+        },
+        {
+            id: 4,
+            title: "Admin Ui-Dashboard",
+            description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vel tenetur necessitatibus unde natus perspiciatis, amet cupiditate ducimus possimus, eaque ex autem id nobis eum dolorem. Neque eveniet fugiat tenetur?",
+            image: "/screenshot.png",
             link: "https://nextjs.org/"
         }
-    ],
-    react: [
-        {
-            id: 1,
-            title: "Todo app",
-            description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vel tenetur necessitatibus unde natus perspiciatis, amet cupiditate ducimus possimus, eaque ex autem id nobis eum dolorem. Neque eveniet fugiat tenetur?",
-            image: "/react-logo.png",
-            link: "https://react.dev"
 
-        }
     ],
     typescript: [
+        {
+            id: 1,
+            title: "Charleson-group",
+            description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vel tenetur necessitatibus unde natus perspiciatis, amet cupiditate ducimus possimus, eaque ex autem id nobis eum dolorem. Neque eveniet fugiat tenetur?",
+            image: "/screenshot.png",
+            link: "https://nextjs.org/"
+        },
+        {
+            id: 2,
+            title: "Apex 2.0",
+            description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vel tenetur necessitatibus unde natus perspiciatis, amet cupiditate ducimus possimus, eaque ex autem id nobis eum dolorem. Neque eveniet fugiat tenetur?",
+            image: "/screenshot.png",
+            link: "https://nextjs.org/"
+        },
+        {
+            id: 3,
+            title: "First-Portfolio",
+            description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vel tenetur necessitatibus unde natus perspiciatis, amet cupiditate ducimus possimus, eaque ex autem id nobis eum dolorem. Neque eveniet fugiat tenetur?",
+            image: "/screenshot.png",
+            link: "https://nextjs.org/"
+        }
+
+    ],
+    react: [
         {
             id: 1,
             title: "typescript",

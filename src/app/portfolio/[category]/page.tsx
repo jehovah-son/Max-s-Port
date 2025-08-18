@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { Frameworks } from "./data";
 import Image from "next/image";
+import Button from "@/component/button/Button";
 
 // define a type from the keys of Frameworks
 // type FrameworkKey = keyof typeof Frameworks;
@@ -17,18 +18,40 @@ type PageProps = {
   params: { category: string };
 };
 
-export default async function CategoriesPage(props: PageProps) {
-  const { params } = props;
+export default async function CategoriesPage({ params }: PageProps) {
   const data = getData(params.category);
 
   return (
-    <div>
-      <h1>{params.category}</h1>
+    <div className="mb-10">
+      <h1 className="md:text-7xl text-5xl text-[#bbb] text-center md:text-left font-bold">
+        Our Works
+      </h1>
+      <h1 className="text-3xl text-[#53c28b] text-center md:text-left font-bold pb-5 pt-3">
+        {params.category}
+      </h1>
       {data.map((item) => (
-        <div key={item.id}>
-          <h2>{item.title}</h2>
-          <p>{item.description}</p>
-          <Image src={item.image} alt={item.title} width={200} height={200} />
+        <div
+          key={item.id}
+          className="flex md:flex-row  flex-col-reverse gap-7 md:mt-20 mt-10 justify-between"
+        >
+          <div className="flex-1 flex flex-col justify-center  ">
+            {" "}
+            <h2 className="md:text-3xl text-2xl pb-5 font-bold text-[#bbb]">
+              {item.title}
+            </h2>
+            <p className=" pb-4 font-bold text-[#bbb">{item.description}</p>
+            <Button href="/" text="see more" />
+          </div>
+          <div className="flex-1">
+            {" "}
+            <Image
+              src={item.image}
+              alt={item.title}
+              width={1000}
+              height={1000}
+              className="w-full h-full"
+            />
+          </div>
         </div>
       ))}
     </div>
