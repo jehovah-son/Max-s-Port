@@ -9,9 +9,8 @@ const getData = (cat: string) => {
   const data = Frameworks[cat as keyof typeof Frameworks];
   if (data) {
     return data;
-  } else {
-    return notFound();
   }
+  return notFound();
 };
 
 type PageProps = {
