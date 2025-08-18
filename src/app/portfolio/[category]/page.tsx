@@ -14,11 +14,12 @@ const getData = (cat: string) => {
   return notFound();
 };
 
-type PageProps = {
-  params: { category: string };
-};
+// type PageProps = {
+//   params: { category: string };
+// };
 
-export default async function CategoriesPage({ params }: PageProps) {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export default async function CategoriesPage({ params }: any) {
   const data = getData(params.category);
 
   return (
