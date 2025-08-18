@@ -21,7 +21,7 @@ type PageProps = {
   };
 };
 
-export default async function CategoriesPage({ params }: PageProps) {
+export default function CategoriesPage({ params }: PageProps) {
   // Fetch the data based on the category
   console.log(params);
   const data = getData(params.category);
