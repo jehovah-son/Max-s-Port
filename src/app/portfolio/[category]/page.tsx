@@ -15,9 +15,7 @@ const getData = (cat: string) => {
 };
 
 type PageProps = {
-  params: {
-    category: string;
-  };
+  params: { category: string };
 };
 
 export default function CategoriesPage({ params }: PageProps) {
