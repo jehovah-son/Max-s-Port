@@ -5,7 +5,7 @@ import Image from "next/image";
 // define a type from the keys of Frameworks
 // type FrameworkKey = keyof typeof Frameworks;
 
-const getData = (cat: string) => {
+export const getData = async (cat: string) => {
   const data = Frameworks[cat as keyof typeof Frameworks];
   if (data) {
     return data;
