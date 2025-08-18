@@ -14,11 +14,11 @@ const getData = (cat: string) => {
   }
 };
 
-type PageProps = {
+export default function CategoriesPage({
+  params,
+}: {
   params: { category: string };
-};
-
-export default function CategoriesPage({ params }: PageProps) {
+}) {
   const data = getData(params.category);
 
   return (
