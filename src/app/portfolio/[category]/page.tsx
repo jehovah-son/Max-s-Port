@@ -5,7 +5,7 @@ import Image from "next/image";
 // define a type from the keys of Frameworks
 // type FrameworkKey = keyof typeof Frameworks;
 
-export const getData = async (cat: string) => {
+const getData = async (cat: string) => {
   const data = Frameworks[cat as keyof typeof Frameworks];
   if (data) {
     return data;
@@ -29,7 +29,6 @@ export default async function CategoriesPage({ params }: PageProps) {
           <h2>{item.title}</h2>
           <p>{item.description}</p>
           <Image src={item.image} alt={item.title} width={200} height={200} />
-          <p>{item.link}</p>
         </div>
       ))}
     </div>
