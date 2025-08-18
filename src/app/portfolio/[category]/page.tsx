@@ -14,11 +14,13 @@ const getData = (cat: string) => {
   }
 };
 
-export default function CategoriesPage({
-  params,
-}: {
+type PageProps = {
   params: { category: string };
-}) {
+};
+
+export default async function CategoriesPage(props: PageProps) {
+  const { params } = await props;
+  console.log("params gotten:", params);
   const data = getData(params.category);
 
   return (
