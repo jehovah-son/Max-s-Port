@@ -3,10 +3,8 @@ import { Frameworks } from "./data";
 import Image from "next/image";
 import Button from "@/component/button/Button";
 
-// define a type from the keys of Frameworks
-// type FrameworkKey = keyof typeof Frameworks;
-
-const getData = (cat: string) => {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const getData = (cat: any) => {
   const data = Frameworks[cat as keyof typeof Frameworks];
   if (data) {
     return data;
