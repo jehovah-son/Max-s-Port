@@ -31,14 +31,16 @@ export default async function CategoriesPage({ params }: any) {
       {data.map((item) => (
         <div
           key={item.id}
-          className="flex md:flex-row  flex-col-reverse gap-7 md:mt-20 mt-10 justify-between"
+          className="flex md:flex-row  md:[&:nth-child(2n+1)]:flex-row-reverse  flex-col-reverse gap-10 md:mt-20 mt-10 justify-between"
         >
           <div className="flex-1 flex flex-col justify-center  ">
             {" "}
             <h2 className="md:text-3xl text-2xl pb-5 font-bold text-[#bbb]">
               {item.title}
             </h2>
-            <p className=" pb-4 font-bold text-[#bbb">{item.description}</p>
+            <p className=" pb-4 font-bold text-[#bbb text-justify">
+              {item.description}
+            </p>
             <Button href="/" text="see more" />
           </div>
           <div className="flex-1">
