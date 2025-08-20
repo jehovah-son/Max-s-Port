@@ -9,7 +9,7 @@ export default function Button({ href, text }: Props) {
   return (
     <Link href={href}>
       <button
-        className=" py-4 px-7 cursor-pointer bg-gradient-to-r from-[#53c28b] to-[#00ccff] border-none text-white w-max rounded-2xl
+        className=" py-4 px-7 cursor-pointer bg-gradient-to-r from-[#194c33] to-[#bbbbbb95] border-none text-white w-max rounded-2xl
        "
       >
         {text}

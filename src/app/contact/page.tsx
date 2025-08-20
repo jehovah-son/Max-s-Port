@@ -20,11 +20,13 @@ export default function Contact() {
     return <Loading />;
   }
   return (
-    <div>
+    <div className="pb-10 pt-2">
       <div>
-        <h1>Let&apos;s Keep in Touch</h1>
+        <h1 className="md:text-6xl text-4xl text-[#bbb] text-center md:text-center font-bold">
+          Let&apos;s Keep in Touch
+        </h1>
       </div>
-      <div className="flex md:justify-between  pt-14 md:flex-row flex-col ">
+      <div className="flex md:justify-between gap[100%]  pt-14 md:flex-row flex-col ">
         {/* image */}
         <div className="flex-1">
           <Image
@@ -32,30 +34,28 @@ export default function Contact() {
             alt="Contact Image"
             width={450}
             height={500}
-            className="object-cover"
+            className="object-contain"
             priority
           />
         </div>
-        <div className="flex-1">
-          <form className="flex flex-col gap-5">
-            <input
-              type="text"
-              placeholder="Name"
-              className="border-2 border-gray-400"
-              required
-            />
-            <input type="email" placeholder="Email" className="" required />
-            <textarea
-              rows={10}
-              cols={30}
-              placeholder="Message"
-              className=""
-              required
-            ></textarea>
-            <Button href="/" text="Send Message" />
-          </form>
+        <div className="flex-1 justify-center flex pt-5  flex-col gap-5">
+          <p>
+            Call:<span>081-184-77-430</span>
+          </p>
+          <p>
+            Email:<span>chukwukasuccess0@gmail.com</span>
+          </p>
         </div>
       </div>
     </div>
   );
 }
+
+// padding: 20px;
+// background-color: transparent;
+// border: none;
+// outline: none;
+// color: #bbb;
+// border: 3px solid #bbb;
+// font-size: 15px;
+// font-weight: bold;
