@@ -5,9 +5,17 @@
 
 body {
   overflow-x: hidden;
-  background: #000;
-  color: #bbb;
 }
 
 * {
+}
+
+.light {
+  background: white;
+  color: #111;
+}
+
+.dark {
+  background: #111;
+  color: #bbb;
 }

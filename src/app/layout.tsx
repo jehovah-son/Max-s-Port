@@ -3,6 +3,7 @@ import { Geist, Geist_Mono, Lato } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/component/navbar/Navbar";
 import Footer from "@/component/footer/Footer";
+import { ThemeProvider } from "@/context/ThemeContext";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,11 +33,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${lato.className}  'antialiased' `}>
-        <div className="flex flex-col justify-between md:mx-12 mx-4 min-h-[100vh]  max-w-[1366px]">
-          <Navbar />
-          {children}
-          <Footer />
-        </div>
+        <ThemeProvider>
+          <div className="flex flex-col justify-between md:mx-12 mx-4 min-h-[100vh]  max-w-[1366px]">
+            <Navbar />
+            {children}
+            <Footer />
+          </div>
+        </ThemeProvider>
       </body>
     </html>
   );

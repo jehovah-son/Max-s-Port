@@ -6,10 +6,10 @@ import YouTube from "../../../public/4.png";
 export default function Footer() {
   return (
     <div className=" flex justify-between items-center mb-5">
-      <div className="text-xs text-gray-400">
-        © 2023 Max&apos;s Port. All rights reserved.
+      <div className="text-xs ">
+        © 2025 Max&apos;s Port. All rights reserved.
       </div>
-      <div className=" opacity-60 flex gap-3 justify-center items-center cursor-pointer">
+      <div className=" opacity-75 flex gap-3 justify-center items-center cursor-pointer">
         <Image
           src={FaceBook}
           width={16}

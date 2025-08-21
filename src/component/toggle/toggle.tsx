@@ -1,17 +1,18 @@
+"use client";
 import Image from "next/image";
 import Sun from "../../../public/sun.png";
 import Moon from "../../../public/moon.png";
+import { useContext } from "react";
+import { ThemeContext } from "@/context/ThemeContext";
 
-interface Props {
-  dark: string;
-  light: string;
-}
-
-export default function Toggle({ dark, light }: Props) {
-  const mode = light;
+export default function Toggle() {
+  const { toggle, mode } = useContext(ThemeContext);
 
   return (
-    <div className="border-2 rounded-2xl border-[#53c28b70] flex  w-[42px] h-[24px]  items-center px-0.5  justify-between  relative cursor-pointer">
+    <div
+      className="border-2 rounded-2xl border-[#53c28b70] flex  w-[42px] h-[24px]  items-center px-0.5  justify-between  relative cursor-pointer "
+      onClick={toggle}
+    >
       <div>
         {" "}
         <Image src={Moon} width={17} height={17} alt="sun" />

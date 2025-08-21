@@ -12,17 +12,13 @@ const getData = (cat: any) => {
   return notFound();
 };
 
-// type PageProps = {
-//   params: { category: string };
-// };
-
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export default async function CategoriesPage({ params }: any) {
   const data = getData(params.category);
 
   return (
     <div className="mb-10">
-      <h1 className="md:text-7xl text-5xl text-[#bbb] text-center md:text-left font-bold">
+      <h1 className="md:text-7xl text-5xl  text-center md:text-left font-bold">
         Our Works
       </h1>
       <h1 className="text-3xl text-[#53c28b] text-center md:text-left font-bold pb-5 pt-3">
@@ -35,12 +31,10 @@ export default async function CategoriesPage({ params }: any) {
         >
           <div className="flex-1 flex flex-col justify-center  ">
             {" "}
-            <h2 className="md:text-3xl text-2xl pb-5 font-bold text-[#bbb]">
+            <h2 className="md:text-5xl text-3xl pb-5 font-bold ">
               {item.title}
             </h2>
-            <p className=" pb-4 font-bold text-[#bbb text-justify">
-              {item.description}
-            </p>
+            <p className=" pb-4   text-justify">{item.description}</p>
             <Button href="/" text="see more" />
           </div>
           <div className="flex-1">
