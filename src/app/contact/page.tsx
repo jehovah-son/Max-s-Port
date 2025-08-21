@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import Loading from "@/app/contact/loading";
-import Button from "@/component/button/Button";
+
 import Image from "next/image";
 import ContactImage from "@/../public/contact.png";
 

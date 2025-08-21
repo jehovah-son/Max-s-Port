@@ -50,7 +50,7 @@ export default function Navbar() {
 
         {/* Navigation Links - hidden on mobile, flex on md+ */}
         <nav className="hidden md:flex gap-6 text- font-medium">
-          <Toggle dark="dark" light="light" />
+          <Toggle />
           {Links.map((link) => (
             <Link
               key={link.id}
