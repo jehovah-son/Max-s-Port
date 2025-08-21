@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import Loading from "@/app/contact/loading";
+import styles from "@/app/contact/page.module.css";
 
 import Image from "next/image";
 import ContactImage from "@/../public/contact.png";
@@ -34,7 +35,7 @@ export default function Contact() {
             alt="Contact Image"
             width={450}
             height={500}
-            className="object-contain"
+            className={styles.img}
             priority
           />
         </div>

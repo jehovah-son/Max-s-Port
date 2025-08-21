@@ -3,6 +3,7 @@ import FaceBook from "../../../public/1.png";
 import IG from "../../../public/2.png";
 import X from "../../../public/3.png";
 import YouTube from "../../../public/4.png";
+
 export default function Footer() {
   return (
     <div className=" flex justify-between items-center mb-5">

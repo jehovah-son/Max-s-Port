@@ -28,6 +28,7 @@ export default function About() {
           alt="about image"
           fill // makes image stretch to fill its parent
           className="object-cover relative" // keeps image nicely cropped
+          priority
         />
         <div className="absolute md:bottom-5 md:left-5 bottom-2 left-2 bg-[#53c28b] md:p-2 p-1 ">
           <h1 className="text-white md:text-2xl text-xl font-bold">
