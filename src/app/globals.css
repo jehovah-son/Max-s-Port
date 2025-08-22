@@ -19,3 +19,7 @@ body {
   background: #111;
   color: #bbb;
 }
+
+.theme {
+  transition: 2s all ease;
+}
