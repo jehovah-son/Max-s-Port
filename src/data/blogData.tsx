@@ -1,14 +1,16 @@
 "use server";
 
 interface Blog {
-  id: number;
-  userId: number;
+  _id: number;
   title: string;
-  body: string;
+  desc: string;
+  img: string;
 }
 
 export default async function BlogData(): Promise<Blog[]> {
-  const res = await fetch("https://jsonplaceholder.typicode.com/posts", {});
+  const res = await fetch("http://localhost:5000/api/posts", {
+    cache: "no-store",
+  });
 
   const data = await res.json();
 

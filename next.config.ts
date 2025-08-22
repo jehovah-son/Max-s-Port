@@ -5,6 +5,7 @@ const nextConfig: NextConfig = {
   images: {
     domains: [
       "images.pexels.com",
+      "imgs.search.brave.com"
     ]
   }
 
