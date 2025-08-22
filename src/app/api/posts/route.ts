@@ -3,11 +3,8 @@ import MongooseConnection from "../../../utils/db"
 import Post from "../../../models/Post";
 
 
-type PropsPage = {
-    req: string
-}
-
-export const GET = async (req: PropsPage) => {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export const GET = async (req: any) => {
     try {
         // Connect to the database
         await MongooseConnection();
