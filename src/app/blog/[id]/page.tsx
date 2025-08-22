@@ -1,25 +1,17 @@
 import Image from "next/image";
 import WebSite from "../../../../public/screenshot.png";
+import BlogDataId from "@/data/blogDataId";
 
-export default function PageId() {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export default async function PageId({ params }: any) {
+  const data = await BlogDataId(params.id);
   return (
     <div className="pb-10">
       <div className="flex justify-between">
         {/* title desc username */}
         <div className="flex-1 flex-col flex justify-between">
-          <p className="text-4xl font-bold">qui est esse</p>
-          <p>
-            body:est rerum tempore vitae\nsequi sint nihil reprehenderit dolor
-            beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil
-            molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque
-            nisi nulla <br /> body:est rerum tempore vitae\nsequi sint nihil
-            reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis
-            voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non
-            debitis possimus qui neque nisi nulla <br /> body:est rerum tempore
-            vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores
-            neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut
-            reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla
-          </p>
+          <p className="text-4xl font-bold">{data.title}</p>
+          <p>{data.body}</p>
           <div className="flex gap-3 items-center">
             <div className="w-[35px] h-[35px] rounded-full overflow-hidden relative">
               <Image

@@ -1,4 +1,5 @@
 "use server";
+import { notFound } from "next/navigation";
 
 interface Blog {
   id: number;
@@ -7,13 +8,17 @@ interface Blog {
   body: string;
 }
 
-export default async function BlogData(): Promise<Blog[]> {
-  const res = await fetch("https://jsonplaceholder.typicode.com/posts", {});
+// that  means your BlogDataId is returning an array of blogs (Blog[]) instead of a single blog object.
+// Make your BlogDataId return only one blog:
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export default async function BlogDataId(id: any): Promise<Blog> {
+  const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`);
 
   const data = await res.json();
 
   if (!res.ok) {
-    throw new Error("Failed to fetch data");
+    return notFound();
   }
 
   return data;
