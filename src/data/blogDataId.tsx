@@ -13,7 +13,7 @@ interface Blog {
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export default async function BlogDataId(id: any): Promise<Blog> {
-  const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`);
+  const res = await fetch(`http://localhost:5000/api/posts/${id}`);
 
   const data = await res.json();
 

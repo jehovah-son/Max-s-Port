@@ -8,7 +8,7 @@ export default async function Blogs() {
   return (
     <div className="">
       {data.map((item) => (
-        <Link href="/blog/blogId" className="" key={item._id}>
+        <Link href={`/blog/${item._id}`} className="" key={item._id}>
           <div className="flex justify-between gap-20 py-5">
             <div className="">
               <Image
