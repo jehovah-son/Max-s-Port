@@ -2,10 +2,12 @@
 import { notFound } from "next/navigation";
 
 interface Blog {
-  id: number;
-  userId: number;
+  _id: number;
+  img: string;
+  desc: string;
   title: string;
-  body: string;
+  username: string;
+  content: string;
 }
 
 // that  means your BlogDataId is returning an array of blogs (Blog[]) instead of a single blog object.

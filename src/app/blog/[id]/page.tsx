@@ -1,5 +1,5 @@
 import Image from "next/image";
-import WebSite from "../../../../public/screenshot.png";
+// import WebSite from "../../../../public/screenshot.png";
 import BlogDataId from "@/data/blogDataId";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -11,24 +11,24 @@ export default async function PageId({ params }: any) {
         {/* title desc username */}
         <div className="flex-1 flex-col flex justify-between">
           <p className="text-4xl font-bold">{data.title}</p>
-          <p>{data.body}</p>
+          <p>{data.desc}</p>
           <div className="flex gap-3 items-center">
             <div className="w-[35px] h-[35px] rounded-full overflow-hidden relative">
               <Image
-                src={WebSite}
+                src={data.img}
                 alt="user pic"
                 fill
                 priority
                 className="object-cover"
               />
             </div>
-            <p>Maxwell</p>
+            <p>{data.username}</p>
           </div>
         </div>
         {/* image */}
         <div className="flex-1">
           <Image
-            src={WebSite}
+            src={data.img}
             alt="title img"
             width={1000}
             height={1000}
@@ -39,68 +39,7 @@ export default async function PageId({ params }: any) {
       </div>
       {/* text content */}
       <div className="pt-16">
-        <p>
-          body:est rerum tempore vitae\nsequi sint nihil reprehenderit dolor
-          beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil
-          molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque
-          nisi nulla <br /> body:est rerum tempore vitae\nsequi sint nihil
-          reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis
-          voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non
-          debitis possimus qui neque nisi nulla <br /> body:est rerum tempore
-          vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores
-          neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut
-          reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla
-          body:est rerum tempore vitae\nsequi sint nihil reprehenderit dolor
-          beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil
-          molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque
-          nisi nulla <br /> body:est rerum tempore vitae\nsequi sint nihil
-          reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis
-          voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non
-          debitis possimus qui neque nisi nulla <br /> body:est rerum tempore
-          vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores
-          neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut
-          reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla
-          body:est rerum tempore vitae\nsequi sint nihil reprehenderit dolor
-          beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil
-          molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque
-          nisi nulla <br /> body:est rerum tempore vitae\nsequi sint nihil
-          reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis
-          voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non
-          debitis possimus qui neque nisi nulla <br /> body:est rerum tempore
-          vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores
-          neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut
-          reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla
-          body:est rerum tempore vitae\nsequi sint nihil reprehenderit dolor
-          beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil
-          molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque
-          nisi nulla <br /> body:est rerum tempore vitae\nsequi sint nihil
-          reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis
-          voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non
-          debitis possimus qui neque nisi nulla <br /> body:est rerum tempore
-          vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores
-          neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut
-          reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla
-          body:est rerum tempore vitae\nsequi sint nihil reprehenderit dolor
-          beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil
-          molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque
-          nisi nulla <br /> body:est rerum tempore vitae\nsequi sint nihil
-          reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis
-          voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non
-          debitis possimus qui neque nisi nulla <br /> body:est rerum tempore
-          vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores
-          neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut
-          reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla
-          body:est rerum tempore vitae\nsequi sint nihil reprehenderit dolor
-          beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil
-          molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque
-          nisi nulla <br /> body:est rerum tempore vitae\nsequi sint nihil
-          reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis
-          voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non
-          debitis possimus qui neque nisi nulla <br /> body:est rerum tempore
-          vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores
-          neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut
-          reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla
-        </p>
+        <p>{data.content}</p>
       </div>
     </div>
   );
