@@ -8,7 +8,7 @@ interface Blog {
 }
 
 export default async function BlogData(): Promise<Blog[]> {
-  const res = await fetch("http://localhost:5000/api/posts", {
+  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/posts`, {
     cache: "no-store",
   });
 
