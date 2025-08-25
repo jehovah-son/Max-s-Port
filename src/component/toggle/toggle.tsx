@@ -22,7 +22,7 @@ export default function Toggle() {
       </div>
 
       <div
-        className={`w-[17px] h-[17px] bg-[#53c28b] flex items-center justify-center rounded-full absolute 
+        className={`w-[17px] h-[17px]  bg-gradient-to-b from-[#53c28b] to-[#00CCFF] flex items-center justify-center rounded-full absolute 
     ${mode === "dark" ? "left-[1px]" : "right-[1px]"}`}
         // if mode is ===  light move the ball to the left but if mode is === to dark move the ball to the right
       ></div>

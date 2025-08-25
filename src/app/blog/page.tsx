@@ -17,6 +17,7 @@ export default async function Blogs() {
                 width={400}
                 height={250}
                 className=""
+                priority
               />
             </div>
             <div className="">
