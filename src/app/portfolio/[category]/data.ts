@@ -35,23 +35,23 @@ export const Frameworks = {
         {
             id: 1,
             title: "Charleson-group",
-            description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vel tenetur necessitatibus unde natus perspiciatis, amet cupiditate ducimus possimus, eaque ex autem id nobis eum dolorem. Neque eveniet fugiat tenetur?",
-            image: "/screenshot.png",
+            description: " A hotel website designed with a clean, modern UI and fully responsive layout, ensuring a seamless browsing experience across desktop and mobile devices. Built to enhance the hotel online presence, the site highlights services, accommodations, and offerings with an elegant design that reflects professionalism and trust.",
+            image: "/charlsongroup.png",
             link: "https://nextjs.org/"
         },
         {
             id: 2,
             title: "Apex 2.0",
-            description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vel tenetur necessitatibus unde natus perspiciatis, amet cupiditate ducimus possimus, eaque ex autem id nobis eum dolorem. Neque eveniet fugiat tenetur?",
-            image: "/screenshot.png",
-            link: "https://nextjs.org/"
+            description: " A crypto wallet application where users can trade and manage cryptocurrencies with ease. Designed with a clean, user-friendly UI and fully responsive layout, ensuring a seamless experience on both desktop and mobile devices. The app is functional and interactive, providing the foundation for secure and efficient crypto transactions.",
+            image: "/apex.png",
+            link: "https://github.com/ryanfavour4/easy-crypto-wallet"
         },
         {
             id: 3,
             title: "First-Portfolio",
-            description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vel tenetur necessitatibus unde natus perspiciatis, amet cupiditate ducimus possimus, eaque ex autem id nobis eum dolorem. Neque eveniet fugiat tenetur?",
-            image: "/screenshot.png",
-            link: "https://nextjs.org/"
+            description: "My first personal portfolio website, created to showcase my skills, projects, and creativity. It features a clean and user-friendly UI, is fully responsive across desktop and mobile devices, and serves as the foundation for my journey into web development.",
+            image: "/portfolio.png",
+            link: "https://github.com/jehovah-son/my-frondend-portfolio"
         }
 
     ],
