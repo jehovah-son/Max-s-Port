@@ -17,7 +17,7 @@ export default async function CategoriesPage({ params }: any) {
   const data = getData(params.category);
 
   return (
-    <div className="mb-10">
+    <div className="pb-10">
       <h1 className="md:text-7xl text-5xl  text-center md:text-left font-bold">
         Our Works
       </h1>
@@ -35,7 +35,11 @@ export default async function CategoriesPage({ params }: any) {
               {item.title}
             </h2>
             <p className=" pb-4   text-justify">{item.description}</p>
-            <Button href="/" text="see more" />
+            <Button
+              href={item.link}
+              // href="https://github.com/ryanfavour4/sancus-frontend"
+              text="GitHub"
+            />
           </div>
           <div className="flex-1">
             {" "}
