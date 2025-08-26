@@ -32,45 +32,52 @@ export default function About() {
         />
         <div className="absolute md:bottom-5 md:left-5 bottom-2 left-2 bg-[#53c28b] md:p-2 p-1 ">
           <h1 className="text-white md:text-2xl text-xl font-bold">
-            Digital Storytellers
+            🚀 Building the Future
           </h1>
           <p className="text-white md:text-xl font-bold">
-            Handcrafting award winning digital experiences
+            One Line of Code at a Time,Handcrafting digital experiences
           </p>
         </div>
       </div>
       {/* text */}
       <div className="flex md:justify-between gap-16 pt-14 md:flex-row flex-col ">
         <div className="flex-1">
-          <h1 className="text-3xl  font-bold pb-5">Who Are We?</h1>
+          <h1 className="text-3xl  font-bold pb-5">Who Am I?</h1>
           <p className="text-justify ">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-            quae dolor, optio voluptatibus magnam iure esse tempora beatae. A
-            suscipit eos. Animi quibusdam cum omnis officiis voluptatum quo ea
-            eveniet? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Ducimus quae dolor, optio voluptatibus magnam iure esse tempora
-            beatae, a suscipit eos. Animi quibusdam cum omnis officiis
+            Hi, I&apos;m Success Chukwuka, a Frontend Developer with over 2
+            years of hands-on, self-taught experience in building modern web
+            applications. I specialize in creating user-friendly, responsive,
+            and visually appealing websites that provide seamless experiences
+            across all devices.
             <br />
             <br />
-            voluptatum quo ea eveniet? Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Ducimus quae dolor, optio voluptatibus magnam iure
-            esse tempora beatae, a suscipit eos. Animi quibusdam cum omnis
-            officiis voluptatum quo ea eveniet?
+            My core skills include HTML, CSS, JavaScript, React, and React-based
+            frameworks, which I use to transform ideas into engaging digital
+            products that not only look great but also deliver real value to
+            users. <br /> <br />
+            I&apos;m passionate about crafting clean, efficient, and scalable
+            code, while focusing on UI/UX best practices to ensure every project
+            connects with its audience. <br />
+            <br />✨ Let&apos;s work together to bring your ideas to life and
+            create digital experiences that truly stand out.
           </p>
         </div>
         {/* what we do */}
         <div className="flex-1">
-          <h1 className="text-3xl  font-bold pb-5">What We Do?</h1>
+          <h1 className="text-3xl  font-bold pb-5">What I Do?</h1>
           <p className="text-justify pb-5">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-            quae dolor, optio voluptatibus magnam iure esse tempora beatae, a
-            suscipit eos. Animi quibusdam cum omnis officiis voluptatum quo ea
-            eveniet? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            <br /> <br /> - Creative Illustrations <br />
-            <br /> - Dynamic Websites
+            I create modern, responsive, and user-friendly websites using HTML,
+            CSS, JavaScript, React, and modern frameworks,tailwind css. My focus
+            is on clean design, smooth functionality, and performance,
+            delivering digital experiences that work beautifully across devices.
+            <br /> <br /> Responsive Websites – clean, modern, and optimized for
+            all devices <br />
+            <br /> Dynamic Web Apps – built with React and modern frameworks
             <br />
-            <br /> - Fast and Handy <br />
-            <br />- Mobile Apps
+            <br />
+            Frontend Development – fast, functional, and performance-driven{" "}
+            <br />
+            <br /> Mobile Apps - in progress...
           </p>
           <Button href="/" text="Contact" />
         </div>
