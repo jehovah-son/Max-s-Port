@@ -37,7 +37,7 @@ export const Frameworks = {
             title: "Charleson-group",
             description: " A hotel website designed with a clean, modern UI and fully responsive layout, ensuring a seamless browsing experience across desktop and mobile devices. Built to enhance the hotel online presence, the site highlights services, accommodations, and offerings with an elegant design that reflects professionalism and trust.",
             image: "/charlsongroup.png",
-            link: "https://nextjs.org/"
+            link: "https://github.com/ryanfavour4/charleson-group"
         },
         {
             id: 2,
