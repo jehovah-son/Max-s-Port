@@ -5,7 +5,8 @@ const nextConfig: NextConfig = {
   images: {
     domains: [
       "images.pexels.com",
-      "imgs.search.brave.com"
+      "imgs.search.brave.com",
+      "oneftbl-cms.imgix.net"
     ]
   }
 
