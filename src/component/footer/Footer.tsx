@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <div className=" flex justify-between items-center mb-5">
+    <div className=" flex justify-between items-center md:mb-5 mb-16">
       <div className="text-xs ">
         © 2025 Max&apos;s Port. All rights reserved.
       </div>
