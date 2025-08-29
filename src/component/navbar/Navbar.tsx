@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Toggle from "../toggle/toggle";
+import Menu from "@/component/menu/Menu";
 interface Props {
   id: number;
   title: string;
@@ -37,7 +38,7 @@ const Links: Props[] = [
 export default function Navbar() {
   return (
     <section className="">
-      <div className="flex justify-center md:justify-between items-center h-[100px]">
+      <div className="flex justify-between md:justify-between items-center h-[100px]">
         {/* Logo */}
         <div className=" hover:text-[#53c28b] ">
           <Link href="/">
@@ -61,6 +62,11 @@ export default function Navbar() {
             </Link>
           ))}
         </nav>
+
+        {/* Menu */}
+        <div className="md:hidden ">
+          <Menu />
+        </div>
       </div>
     </section>
   );
