@@ -4,6 +4,9 @@ import CloseMenu from "../../../public/cancle.png";
 import Image from "next/image";
 import { useState } from "react";
 import Toggle from "../toggle/toggle";
+import { useContext } from "react";
+import { ThemeContext } from "../../context/ThemeContext";
+import Link from "next/link";
 
 const Links = [
   {
@@ -35,6 +38,7 @@ const Links = [
 
 export default function Menu() {
   const [isOpen, setIsOpen] = useState(false);
+  const { mode } = useContext(ThemeContext);
 
   return (
     <div>
@@ -57,14 +61,28 @@ export default function Menu() {
       )}
       {/* create a condition here show all this below if it only open */}
       {isOpen && (
-        <div className="absolute bg-[#194c33] top-24 left-0 w-full flex flex-col gap-4 justify-center item-center ">
-          <ul className="flex flex-col gap-4">
+        <div
+          className={`absolute   top-24 left-0 w-full h-screen   z-10 flex flex-col gap-6 items-end p-6  text-2xl transition-all duration-2000 ease-in-out   ${
+            mode === "dark" ? "bg-[#111] text-[#bbb]" : "bg-white text-[#111]"
+          }`}
+        >
+          <div
+            className="  flex
+          flex-col
+          gap-6
+          text-right
+          w-full"
+          >
             {Links.map((link) => (
-              <li key={link.id}>
-                <a href={link.href}>{link.title}</a>
-              </li>
+              <Link
+                href={link.href}
+                key={link.id}
+                onClick={() => setIsOpen(false)}
+              >
+                {link.title}
+              </Link>
             ))}
-          </ul>
+          </div>
           <Toggle />
         </div>
       )}
