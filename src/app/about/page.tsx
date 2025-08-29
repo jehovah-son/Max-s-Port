@@ -79,7 +79,7 @@ export default function About() {
             <br />
             <br /> Mobile Apps - in progress...
           </p>
-          <Button href="/" text="Contact" />
+          <Button href="/contact" text="Contact" />
         </div>
       </div>
     </div>
